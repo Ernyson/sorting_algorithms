@@ -15,6 +15,7 @@ void sort_deck(deck_node_t **deck);
  *         0 if s1 == s2
  *         Negative byte difference if s1 < s2
  */
+
 int _strcmp(const char *s1, const char *s2)
 {
 	while (*s1 && *s2 && *s1 == *s2)
@@ -34,6 +35,7 @@ int _strcmp(const char *s1, const char *s2)
  *
  * Return: The numerical value of the card.
  */
+
 char get_value(deck_node_t *card)
 {
 	if (_strcmp(card->card->value, "Ace") == 0)
